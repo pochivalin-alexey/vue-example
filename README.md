@@ -1,7 +1,7 @@
 # vue-example
 
 [demo](https://pochivalin-alexey.github.io/vue-example/dist/)  
-<img width="320" src="https://github.com/pochivalin-alexey/vue-example/tree/master/src/assets/screen.jpg?raw=true">
+<img width="320" src="https://github.com/pochivalin-alexey/vue-example/blob/master/src/assets/screen.jpg?raw=true">
 
 ## Project setup
 
