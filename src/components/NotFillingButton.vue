@@ -32,12 +32,6 @@ export default class NotFillingButton extends Vue {
 </script>
 
 <style scoped>
-@media screen and (max-width: 768px) {
-  button {
-    width: 100%;
-  }
-}
-
 button {
   float: left;
   height: 40px;

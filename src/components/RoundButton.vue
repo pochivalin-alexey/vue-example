@@ -1,6 +1,7 @@
 <template>
   <button :style="{ margin }" @click="$emit('click', $event)">
-    <i v-if="icon" :class="{ [icon]: true }"></i>{{ label }}
+    <i v-if="icon" :class="{ [icon]: true }"></i>
+    {{ label }}
   </button>
 </template>
 
@@ -18,6 +19,14 @@ export default class RoundButton extends Vue {
 </script>
 
 <style scoped>
+@media screen and (max-width: 768px) {
+  button {
+    float: none;
+    margin: auto;
+    display: block;
+  }
+}
+
 button {
   width: 172px;
   height: 40px;

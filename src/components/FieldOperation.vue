@@ -200,6 +200,7 @@ export default class FieldOperation extends Vue {
       this.fields[fieldIndex].sort = "asc";
     }
 
+    // @ts-ignore
     this.filterOperations.sort((x: Operation, y: Operation) => {
       let a: string = "";
       let b: string = "";
