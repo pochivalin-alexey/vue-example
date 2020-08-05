@@ -19,18 +19,19 @@ export default class RoundButton extends Vue {
 </script>
 
 <style scoped>
-@media screen and (max-width: 768px) {
+@media (max-width: 680px) {
   button {
-    float: none;
-    margin: auto;
-    display: block;
+    position: relative !important;
+    margin: 1% calc(50% - 86px) !important;
   }
 }
 
 button {
   width: 172px;
   height: 40px;
-  float: right;
+  /*float: right;*/
+  position: absolute;
+  right: 0.1%;
   border: 1px solid;
   font-size: 13px;
   box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);

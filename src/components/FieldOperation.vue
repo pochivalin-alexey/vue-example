@@ -3,20 +3,20 @@
     <div class="title">Операции на поле 112</div>
     <not-filling-button
       :label="'ЗАПЛАНИРОВАННЫЕ ОПЕРАЦИИ'"
-      :margin="'25px 0px 20px -5px'"
+      :margin="'25px 0px 0px -5px'"
       @click="filterByDate('plan')"
       ref="plan"
     ></not-filling-button>
     <not-filling-button
       :label="'ВЫПОЛНЕННЫЕ ОПЕРАЦИИ'"
-      :margin="'25px 0px 20px 20px'"
+      :margin="'25px 0px 0px 20px'"
       @click="filterByDate('complete')"
       ref="complete"
     ></not-filling-button>
     <round-button
       :label="'Добавить операцию'"
       :icon="'fa fa-plus-circle'"
-      :margin="'21px 0px 20px 0px'"
+      :margin="'21px 0px 0px 0px'"
       @click="createOperation"
     ></round-button>
 
@@ -250,7 +250,7 @@ table {
   font-size: 11px;
   width: 100%;
   height: 40px;
-  margin-top: 37px;
+  margin-top: 20px;
 }
 
 .table-header {

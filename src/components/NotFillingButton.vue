@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <button
-      :class="{ 'active-button': selected ? true : false }"
-      :style="{ margin }"
-      @click="onClick"
-    >
-      <i v-if="icon" :class="{ [icon]: true }"></i>
-      {{ label }}
-    </button>
-  </div>
+  <button
+    :class="{ 'active-button': selected ? true : false }"
+    :style="{ margin }"
+    @click="onClick"
+  >
+    <i v-if="icon" :class="{ [icon]: true }"></i>
+    {{ label }}
+  </button>
 </template>
 
 <script lang="ts">
@@ -32,8 +30,15 @@ export default class NotFillingButton extends Vue {
 </script>
 
 <style scoped>
+@media (max-width: 680px) {
+  button {
+    width: 100%;
+    margin: 0% 0% 0% 0% !important;
+  }
+}
+
 button {
-  float: left;
+  /*float: left;*/
   height: 40px;
   border: none;
   font-size: 11px;
